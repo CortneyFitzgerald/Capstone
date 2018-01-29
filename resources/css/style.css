@@ -1,0 +1,333 @@
+html{
+  font-family: serif;
+}
+
+head{
+  padding: auto 24px;
+  height: 64px;
+  background-color: white;
+  display: inline-block;
+}
+
+nav div.desktop {
+  line-height: 32px;
+  display: inline;
+  color: grey;
+  text-align: left;
+}
+
+nav div.desktop strong{
+  color: darkgrey;
+}
+
+nav .menu{
+  display: inline;
+  text-align: right;
+  justify-content: space-between;
+}
+
+nav div.mobile{
+  display: none;
+}
+
+@media (min-width:200px) and (max-width:900px){
+  nav div.desktop {
+      display: none !important;
+  }
+    nav div.mobile {
+    display: inline;
+    height: 64px;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.banner {
+  background-color: grey;
+  display: inline-block;
+}
+
+.banner img {
+  padding: 32px 24px;
+  width: 60%;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.banner nav {
+  flex-direction: row;
+  align-items: center;
+  text-align: left;
+  justify-content: center;
+  width: 30%;
+  color: black;
+}
+
+.banner h1 {
+  font-style: bold;
+  color: darkgrey;
+}
+
+.banner h2 {
+  color: darkgrey;
+}
+
+.banner button {
+  color: white;
+  background-color: darkgrey;
+  padding: 8px auto;
+}
+
+@media only screen and (max-width: 760px) {
+  .banner {
+    flex-direction: column;
+  }
+
+  .banner img {
+  width: 100%;
+  }
+
+  .banner nav {
+    padding-left: 32px 16px;
+  }
+
+  .banner h2{
+    padding-top: 32px;
+    padding-bottom: 24px;
+  }
+
+  .banner button{
+    background-color: grey;
+  }
+}
+
+.banner2{
+  flex-direction: row;
+  display: inline-block;
+}
+
+.hurt{
+  flex-direction: column;
+  padding: 32px 24px;
+  text-align: left;
+}
+
+.hurt img {
+  width: 60%;
+  padding-bottom: 32px;
+}
+
+.hurt h1{
+  color: darkgrey;
+}
+
+.hurt .quote{
+  padding-top: 24px;
+}
+
+.hurt .sig {
+  color: darkgrey;
+}
+
+.information .orientation, .information .campus, .information .guest{
+  flex-direction: column;
+  width: 40%;
+  padding: 16px auto 16px 16px;
+}
+
+.information .mobile{
+  display: none;
+}
+
+.information .desktop img {
+  height: auto;
+  width: 35%;
+}
+
+.information .text {
+  width: 65%;
+  padding-left: 16px;
+  text-align: left;
+  justify-content: center;
+}
+
+.information h2{
+  color: darkgrey;
+}
+
+.information button{
+    color: blue;
+}
+
+.information .guest{
+  background-color: grey;
+}
+
+@media only screen and (max-width: 760px) {
+  .information .desktop{
+    display: none;
+  }
+
+  .information .mobile{
+    display: flex;
+  }
+
+  .information .orientation, .information .campus, .information .guest{
+    padding: 16px auto 32px 16px;
+  }
+  .information .text {
+    padding-left: 16px;
+  }
+}
+
+.course {
+  background-color: grey;
+  display: inline-flex;
+  flex-wrap: wrap;
+  padding: 32px 72px;
+}
+
+.course h1{
+  color: darkgrey;
+}
+
+.course img {
+  height: auto;
+  padding-top: 32px;
+  width: 25%;
+}
+
+.course h2{
+  color: darkgrey;
+  padding: 16px;
+}
+
+.COURSES{
+  padding: 8px auto;
+}
+
+.course h2, .COURSES, .course p{
+  padding-left: 16px;
+}
+
+.course nav{
+  margin: 32px;
+  background-color: white;
+  display: inline-flex;
+  width: 25%;
+}
+
+@media only screen and (max-width: 760px) {
+  .course {
+    padding: 32px auto;
+    background-color: white;
+  }
+
+  .COURSES. .course p{
+    display: none;
+  }
+
+  .course h2{
+    padding: 16px auto 24px 16px;
+    margin-bottom: 8px;
+  }
+
+  .course nav{
+    background-color: grey;
+  }
+
+  .course h1{
+    padding-bottom: 16px;
+  }
+}
+
+.thesis{
+  background-color: white;
+  padding: 32px auto 32px 24px;
+  flex-direction: row;
+}
+
+.thesis h1{
+  color: darkgrey;
+  padding: 32px;
+}
+
+.thesis .left{
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.thesis .left video{
+  width: 60%;
+  padding-right: 24px;
+  padding-bottom: 24px;
+}
+
+.thesis .left h2{
+  color: darkgrey;
+  padding-bottom: 8px;
+  text-align: left;
+}
+
+.thesis p{
+  color: grey;
+  flex-wrap: wrap;
+  text-align: left;
+}
+
+.thesis .right{
+  width: 40%;
+}
+
+.thesis .right img{
+  width: 35%;
+  height: auto;
+  padding: 16px;
+}
+
+.thesis .right h2{
+  color: darkgrey;
+  flex-wrap: wrap;
+  text-align: left;
+}
+
+@media only screen and (max-width: 760px) {
+  .thesis h1{
+    padding: 32px auto 16px auto;
+  }
+
+  .thesis video{
+    width: 100%;
+    padding-bottom: 24px;
+  }
+
+  .desktop{
+    display: none;
+  }
+}
+
+footer .copyright{
+  color: grey;
+  padding: 16px auto auto 24px;
+  text-align: left;
+  justify-content: flex-start;
+}
+
+footer .desktop{
+  text-align: right;
+  color: grey;
+  padding: 16px 16px auto auto;
+  justify-content: flex-start;
+}
+
+@media only screen and (max-width: 760px){
+  footer .desktop{
+    display: none;
+  }
+
+  footer .copyright{
+    padding: 16px auto;
+    padding-left: 10px;
+    text-align: left;
+  }
+}
